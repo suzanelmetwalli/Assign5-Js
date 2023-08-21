@@ -25,7 +25,7 @@ const month = monthNames[date.getMonth()];
 
 async function getWeather(country) {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=8b15fa87b7334e3da64111015232008&q=${country}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=8b15fa87b7334e3da64111015232008&q=${country}&days=3`
   );
   let data = await response.json();
   forecastDay = data.forecast.forecastday;
