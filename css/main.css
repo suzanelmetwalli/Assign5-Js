@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #1e202b;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* nav */
+nav {
+  background-color: var(--primary-color);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.navbar-brand h1 {
+  font-size: 1.125rem;
+}
+.navbar-brand small {
+  font-size: larger;
+  color: #bfc1c8;
+}
+.navbar-brand,
+.nav-link {
+  color: white;
+  padding: 3px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+.logoImg {
+  width: 64px;
+}
+.navbar-collapse {
+  justify-content: end;
+}
+.navbar-nav .nav-item {
+  margin-left: 50px;
+}
+/* Start Landing */
+.landing {
+  height: 350px;
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  background-position: center;
+}
+.afterLanding {
+  background-color: var(--primary-color);
+}
+
+.form-control {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+.form-control:focus {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: grey;
+  opacity: 1;
+}
+.findBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* cards */
+
+.card-group {
+  position: relative;
+  top: -100px;
+}
+.cardTitle {
+  background: rgba(0, 0, 0, 0.1);
+}
+.card-body {
+  color: white;
+}
+#secondCard {
+  background-color: #262936;
+}
+#firstCard,
+#thirdCard {
+  background-color: #2d303d;
+}
+.degreeFont {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  .card-group {
+    flex-direction: column;
+  }
+}
+/* footer */
+footer {
+  background-color: #323544;
+}
+.social li {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-inline: 5px;
+}
+footer p {
+  color: #bfc1c8;
+  font-size: 14px;
+}
